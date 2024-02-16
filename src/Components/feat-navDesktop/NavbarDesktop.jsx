@@ -8,7 +8,6 @@ import NavMobile from "../feat-navMobile/NavMobile";
 import NavActivity from "../feat-activity/NavActivity";
 import { Loader } from "../feat-login-register/Loader";
 import { useIsUserAuthenticated } from "../feat-login-register/useIsUserAuthenticated";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const NavbarDesktop = ({ children }) => {

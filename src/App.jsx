@@ -12,7 +12,7 @@ import Welcome from "./Components/feat-login-register/Welcome";
 import WelcomeToApplication from "./Components/feat-login-register/WelcomeToApplication";
 import Pet from "./Components/feat-pet/Pet";
 import AllActivity from "./Components/feat-activity/AllActivity";
-import ChangeEmail from "./Components/feat-profile/ChangeEmail";
+// import ChangeEmail from "./Components/feat-profile/ChangeEmail";
 import ChangePasswordProfile from "./Components/feat-profile/ChangePasswordProfile";
 import Contact from "./Components/feat-profile/Contact";
 import EditProfile from "./Components/feat-profile/EditProfile";
@@ -43,7 +43,7 @@ function App() {
     { path: "/notification", element: <Notification /> },
     { path: "/privacy", element: <Privacy /> },
     { path: "/security", element: <Security /> },
-    { path: "/changeemail", element: <ChangeEmail /> },
+    // { path: "/changeemail", element: <ChangeEmail /> },
     { path: "/changepassword", element: <ChangePasswordProfile /> },
     { path: "/contact", element: <Contact /> },
     { path: "/all-activity", element: <AllActivity /> },
