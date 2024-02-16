@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { axiosRequest } from "../../axios";
 import NavbarDesktop from "../feat-navDesktop/NavbarDesktop";
 import Box from "@mui/material/Box";
@@ -19,7 +19,7 @@ function EditProfile() {
   // Set Profile Image
   const [file, setFile] = useState("");
   const [previewUrl, setPreviewUrl] = useState("");
-  const [isValid, setIsValid] = useState(false);
+  // const [isValid, setIsValid] = useState(false);
 
   // Set Value
   const [fullname, setFullname] = useState("");
@@ -52,17 +52,13 @@ function EditProfile() {
   }, [file]);
 
   const pickedHandler = (event) => {
-    let pickedFile;
-    let fileIsValid = isValid;
     if (event.target.files && event.target.files.length === 1) {
       const pickedFile = event.target.files[0];
       setFile(pickedFile);
       console.log(pickedFile);
-      setIsValid(true);
-      fileIsValid = true;
+      // setIsValid(true);
     } else {
-      setIsValid(false);
-      fileIsValid = false;
+      // setIsValid(false);
     }
   };
 
@@ -117,7 +113,7 @@ function EditProfile() {
       formData.append("gender", gender);
       formData.append("weight", weightInt);
       formData.append("height", heightInt);
-      const response = await axiosRequest.put("/edit-profile", formData, {
+      await axiosRequest.put("/edit-profile", formData, {
         withCredentials: true,
       });
       alert("Successfully edit profile!");
