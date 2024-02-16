@@ -13,7 +13,7 @@ import WelcomeToApplication from "./Components/feat-login-register/WelcomeToAppl
 import Pet from "./Components/feat-pet/Pet";
 import AllActivity from "./Components/feat-activity/AllActivity";
 // import ChangeEmail from "./Components/feat-profile/ChangeEmail";
-import ChangePasswordProfile from "./Components/feat-profile/ChangePasswordProfile";
+// import ChangePasswordProfile from "./Components/feat-profile/ChangePasswordProfile";
 import Contact from "./Components/feat-profile/Contact";
 import EditProfile from "./Components/feat-profile/EditProfile";
 import Privacy from "./Components/feat-profile/Privacy";
@@ -44,7 +44,7 @@ function App() {
     { path: "/privacy", element: <Privacy /> },
     { path: "/security", element: <Security /> },
     // { path: "/changeemail", element: <ChangeEmail /> },
-    { path: "/changepassword", element: <ChangePasswordProfile /> },
+    // { path: "/changepassword", element: <ChangePasswordProfile /> },
     { path: "/contact", element: <Contact /> },
     { path: "/all-activity", element: <AllActivity /> },
     { path: "/add-activity", element: <AddActivity /> },
